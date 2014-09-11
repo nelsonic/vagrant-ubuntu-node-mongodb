@@ -1,4 +1,3 @@
-# detailed instructions for installing
 $script = <<SCRIPT
 
 # https://github.com/joyent/node/wiki/installing-node.js-via-package-manager
@@ -14,13 +13,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
 sudo apt-get update
 sudo apt-get install -y mongodb-org
-
-## Uncomment the following lines to test everything is working
-## with a simple node.js app
-# git clone https://github.com/nelsonic/ac.git && cd ac
-# npm instal
-# npm start
-# now visit: localhost:3000 in your browser and type a word in the field!
+# sudo service mongod start
 
 SCRIPT
 
